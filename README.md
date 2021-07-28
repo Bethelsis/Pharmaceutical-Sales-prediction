@@ -1,7 +1,11 @@
 ## Pharmaceutical-Sales-prediction
-***Data*** <br>
 
-**Short description:** <br>
+***Objective*** <br>
+
+The main objective is to build and serve an end-to-end product that forecast sales in all <br>
+Rossmann Pharmaceuticals stores across several cities, six weeks ahead of time. 
+
+***Data*** <br>
 
 **Sales**: the turnover for any given day (target variable). <br>
 **Customers**: the number of customers on a given day. <br>
@@ -17,3 +21,6 @@
 **Promo2**: Promo2 is a continuing a promotion for some -stores: 0 = store is not participating, 1 = store is participating <br>
 **Promo2Since[Year/Week]**: describes the year and calendar week when the store started participating in Promo2 <br>
 **PromoInterval**: describes the consecutive intervals Promo2 is started, naming the months the promotion is started.  <br>E.g. "Feb,May,Aug,Nov" means each round starts in February, May, August, November of any given year for that store
+
+
+
