@@ -4,16 +4,15 @@ import home
 import data 
 import predicted
 import insights
+import predict
 
 # create the pages
 PAGES = {
-    
-  
-
     "Home": home,
     "Data":data,
+    "Insights": insights,
     "Predicted sales ": predicted,
-    "Insights": insights
+    "predict": predict
 }
 
 
