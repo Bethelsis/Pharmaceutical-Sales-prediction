@@ -7,6 +7,9 @@ import insights
 
 # create the pages
 PAGES = {
+    
+  
+
     "Home": home,
     "Data":data,
     "Predicted sales ": predicted,
@@ -19,9 +22,8 @@ def main():
     
     st.sidebar.title("Navigation")
     selection = st.sidebar.radio("Go to", list(PAGES.keys()))
-
+  
     page = PAGES[selection]
-
     with st.spinner(f"Loading {selection} ..."):
         ast.shared.components.write_page(page)
 
