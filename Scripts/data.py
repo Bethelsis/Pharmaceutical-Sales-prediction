@@ -14,8 +14,8 @@ def write():
         st.markdown("The data and feature description for this challenge can be found [here](https://www.kaggle.com/c/rossmann-store-sales)")
  
 
-        train = pd.read_csv('Scripts/pages/train.csv')
-        store = pd.read_csv('Scripts/pages/store.csv')
+        train = pd.read_csv('Scripts/train.csv')
+        store = pd.read_csv('Scripts/store.csv')
         merged_train = pd.merge(left = train, right = store, how = 'inner', left_on = 'Store', right_on = 'Store')
         merged_train = merged_train.set_index('Store')
         st.write(merged_train.sample(20))

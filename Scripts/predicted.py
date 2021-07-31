@@ -13,7 +13,7 @@ def write():
     
 
         # load data
-        data = pd.read_csv('Scripts/pages/predictions_for_test_data.csv', index_col = 2)
+        data = pd.read_csv('Scripts/predictions_for_test_data.csv', index_col = 2)
 
        
         st.sidebar.subheader('Enter date ranges')
