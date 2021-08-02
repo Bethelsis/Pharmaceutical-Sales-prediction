@@ -1,0 +1,3 @@
+Mean squared error for RF on validation data:835787.530066081
+Mean absolute error for RF on validation data: 527.606952166313
+R2 score for RF on validation data: 0.9433033123456033
