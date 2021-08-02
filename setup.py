@@ -25,7 +25,7 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
     ],
-    description="Python Implementation of Classical, sequential and machine learning A/B testings to measure the success of SmartAd company Ads.",
+    description="Pharmaceutical Sales prediction",
     install_requires=requirements,
     long_description=readme,
     include_package_data=True,
