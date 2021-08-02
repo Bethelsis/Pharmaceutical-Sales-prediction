@@ -12,3 +12,8 @@ jobs:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pip install -r requirements.txt
+          cd scripts
+          python RandomForestModel.py
+          cd ..
+          cat random-forest-metrics.txt >> report.md
+          cml-send-comment report.md
