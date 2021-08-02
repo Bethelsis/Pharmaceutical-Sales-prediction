@@ -1,6 +1,6 @@
 
-"""The setup script."""
-
+"""setup script."""
+#!/usr/bin/env python
 from setuptools import setup, find_packages
 
 with open('README.md') as readme_file:
@@ -22,15 +22,21 @@ setup(
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
         'Natural Language :: English',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
     ],
+<<<<<<< HEAD
+    description="Machine learning approcah for rossman sales prediction",
+=======
     description="Pharmaceutical Sales prediction",
+>>>>>>> 37ba6b4e78d9131bc302bf58c3c2528de0e74e52
     install_requires=requirements,
     long_description=readme,
     include_package_data=True,
-    keywords='scripts',
-    name='scripts',
+    keywords='scripts,sales prediction',
+    name='pharmaceutical-sales-prediction',
     packages=find_packages(include=['scripts', 'scripts.*']),
     test_suite='Tests',
     tests_require=test_requirements,
