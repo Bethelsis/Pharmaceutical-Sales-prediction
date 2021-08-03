@@ -148,7 +148,7 @@ x_train, x_val, y_train, y_val, x_test = reconstruct_sets(features)
 
 
 
-clf=RandomForestRegressor(n_estimators=10)
+clf=RandomForestRegressor(n_estimators=15)
 clf.fit(x_train,y_train)
 y_pred = clf.predict(x_val)
 print("Mean squared error for RF on validation data =", mean_squared_error(y_val, y_pred))
