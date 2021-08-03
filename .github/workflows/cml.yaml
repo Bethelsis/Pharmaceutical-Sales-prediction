@@ -15,5 +15,5 @@ jobs:
           cd Scripts
           python RF_model.py
           
-          echo "## Model metrics" 
+          echo "## Here are the model metrics" 
          
