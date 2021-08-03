@@ -13,5 +13,7 @@ jobs:
           cd Scripts
           python RF_model.py
           
-          echo "## Here are the model metrics" 
+          echo "## Model metrics" > report.md
+          cat RF_metrics.txt >> report.md        
+          cml-send-comment report.md
          
