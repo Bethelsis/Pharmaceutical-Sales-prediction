@@ -12,6 +12,7 @@ jobs:
           pip install -r requirements.txt
           cd Scripts
           python RF_model.py
+          cd ..
           
           echo "## Model metrics" > report.md
           cat RF_metrics.txt >> report.md        
