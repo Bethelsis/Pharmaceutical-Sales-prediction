@@ -17,45 +17,21 @@ import dvc.api
 import warnings
 warnings.filterwarnings(action="ignore")
 #Load training data 
-path = 'data/train.csv'
-repo = '/home/bethelhem/Pharmaceutical-Sales-prediction'
-version = 'train_v1'
-data_url2 = dvc.api.get_url(
-    path = path,
-    repo = repo,
-    rev=version
-    )
 try:
-    train_data=pd.read_csv(data_url2)
+    train_data=pd.read_csv("train.csv")
 except FileNotFoundError:
         print("file not found")
 
 #load test data
-path = 'data/test.csv'
-repo = '/home/bethelhem/Pharmaceutical-Sales-prediction'
-version = 'test_v1'
-data_url3 = dvc.api.get_url(
-    path = path,
-    repo = repo,
-    rev=version
-    )
 try:
-    test_data=pd.read_csv(data_url3)
+    test_data=pd.read_csv("test.csv")
 except FileNotFoundError:
      print("file not found")
 
 
 #load store data
-path = 'data/store.csv'
-repo = '/home/bethelhem/Pharmaceutical-Sales-prediction'
-version = 'store_v1'
-data_url = dvc.api.get_url(
-    path = path,
-    repo = repo,
-    rev=version
-    )
 try:
-    store_data=pd.read_csv(data_url)
+    store_data=pd.read_csv("store.csv")
 except FileNotFoundError:
         print("file not found")
 # merge the train/test sets with the stores set
@@ -172,7 +148,7 @@ x_train, x_val, y_train, y_val, x_test = reconstruct_sets(features)
 
 
 
-clf=RandomForestRegressor(n_estimators=10)
+clf=RandomForestRegressor(n_estimators=15)
 clf.fit(x_train,y_train)
 y_pred = clf.predict(x_val)
 print("Mean squared error for RF on validation data =", mean_squared_error(y_val, y_pred))
