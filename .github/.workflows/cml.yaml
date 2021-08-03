@@ -10,7 +10,7 @@ jobs:
       - name: Train model
         run: |
           pip install -r requirements.txt
-          cd scripts
+          cd Scripts
           python RandomForestModel.py
           cd ..
           cat RF_metrics.txt >> report.md
