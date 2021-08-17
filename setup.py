@@ -27,11 +27,8 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
     ],
-<<<<<<< HEAD
-    description="Machine learning approcah for rossman sales prediction",
-=======
+
     description="Pharmaceutical Sales prediction",
->>>>>>> 37ba6b4e78d9131bc302bf58c3c2528de0e74e52
     install_requires=requirements,
     long_description=readme,
     include_package_data=True,
