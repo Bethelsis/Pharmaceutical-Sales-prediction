@@ -1,6 +1,6 @@
 xgboost==1.4.2
 streamlit==0.83.0
-pandas==1.2.5
+pandas==1.1.5
 numpy==1.17.4
 awesome_streamlit==20200728.1
 dvc==2.5.4
