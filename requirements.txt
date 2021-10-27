@@ -1,6 +1,6 @@
-xgboost==1.4.2
-streamlit==0.83.0
-pandas==1.1.5
-numpy==1.17.4
-dvc==2.5.4
+xgboost
+streamlit
+pandas
+numpy
+dvc
 scikit_learn
